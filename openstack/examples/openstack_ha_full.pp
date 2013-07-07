@@ -103,6 +103,7 @@ $bind_address = $node[0]['internal_address']
 
 $rabbit_hosts = $controller_addresses
 $glance_api_servers = "${public_virtual_ip}:9292"
+$memcached_servers = values($controller_public_addresses)
 ## -- NODE INFOS -- ##
 
 
@@ -160,6 +161,8 @@ node /controller/{
        # RabbitMQ
        rabbit_password      => $rabbit_password ,
        rabbit_hosts         => $rabbit_hosts,
+       # memcached  
+       memcached_servers    => $memcached_servers,
    }
 
    class{'openstack::auth_file':

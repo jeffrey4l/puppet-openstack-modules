@@ -30,6 +30,8 @@ class openstack::nova::controller (
   # Nova Required
   $nova_user_password,
   $nova_db_password,
+  # memcached
+  $memcached_servers         = false,
   # Network
   $network_manager           = 'nova.network.manager.FlatDHCPManager',
   $network_config            = {},
@@ -116,6 +118,7 @@ class openstack::nova::controller (
     glance_api_servers  => $glance_connection,
     verbose             => $verbose,
     rabbit_hosts        => $rabbit_hosts,
+    memcached_servers   => $memcached_servers,
   }
 
   # Configure nova-api

@@ -94,6 +94,8 @@ class openstack::controller (
   $mysql_bind_address      = '0.0.0.0',
   $allowed_hosts           = '%',
   $enabled_ha              = false,
+  # memcached
+  $memcached_servers       = false,
   # Keystone
   $keystone_db_user        = 'keystone',
   $keystone_db_dbname      = 'keystone',
@@ -275,6 +277,8 @@ class openstack::controller (
   class { 'openstack::nova::controller':
     # Database
     db_host                 => $db_host,
+    # memcached
+    memcached_servers       => $memcached_servers,
     # Network
     bind_address            => $bind_address,
     network_manager         => $network_manager,

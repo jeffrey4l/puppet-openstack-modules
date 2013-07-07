@@ -30,6 +30,8 @@ class openstack::controller_ha (
     # RabbitMQ
     $rabbit_hosts = ['127.0.0.1'],
     $rabbit_password,
+    # memcached
+    $memcached_servers = false,
     $verbose = false,
 ) {
 
@@ -82,6 +84,8 @@ class openstack::controller_ha (
       mysql_bind_address  => $internal_address,
       mysql_root_password => $mysql_root_password,
       enabled_ha          => true,
+      # Memcached
+      memcached_servers   => false,
       # VNC
       vncproxy_host        => $bind_address,
 #      # cinder and quantum password are not required b/c they are
