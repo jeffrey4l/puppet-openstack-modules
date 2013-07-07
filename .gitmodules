@@ -4,3 +4,75 @@
 [submodule "cinder"]
 	path = cinder
 	url = git://github.com/stackforge/puppet-cinder
+[submodule "apt"]
+	path = apt
+	url = git://github.com/puppetlabs/puppetlabs-apt
+[submodule "concat"]
+	path = concat
+	url = git://github.com/ripienaar/puppet-concat
+[submodule "firewall"]
+	path = firewall
+	url = git://github.com/puppetlabs/puppetlabs-firewall.git
+[submodule "git"]
+	path = git
+	url = git://github.com/puppetlabs/puppetlabs-git
+[submodule "glance"]
+	path = glance
+	url = git://github.com/stackforge/puppet-glance
+[submodule "haproxy"]
+	path = haproxy
+	url = git://github.com/puppetlabs/puppetlabs-haproxy
+[submodule "horizon"]
+	path = horizon
+	url = git://github.com/stackforge/puppet-horizon
+[submodule "inifile"]
+	path = inifile
+	url = git://github.com/cprice-puppet/puppetlabs-inifile
+[submodule "keepalived"]
+	path = keepalived
+	url = git://github.com/Unyonsys/puppet-module-keepalived.git
+[submodule "keystone"]
+	path = keystone
+	url = git://github.com/stackforge/puppet-keystone
+[submodule "l23network"]
+	path = l23network
+	url = git://github.com/xenolog/l23network.git
+[submodule "memcached"]
+	path = memcached
+	url = git://github.com/saz/puppet-memcached
+[submodule "mysql"]
+	path = mysql
+	url = git://github.com/puppetlabs/puppetlabs-mysql
+[submodule "nova"]
+	path = nova
+	url = git://github.com/stackforge/puppet-nova
+[submodule "quantum"]
+	path = quantum
+	url = git://github.com/bodepd/puppet-quantum
+[submodule "rabbitmq"]
+	path = rabbitmq
+	url = git://github.com/puppetlabs/puppetlabs-rabbitmq
+[submodule "rsync"]
+	path = rsync
+	url = git://github.com/puppetlabs/puppetlabs-rsync
+[submodule "ssh"]
+	path = ssh
+	url = git://github.com/saz/puppet-ssh
+[submodule "stdlib"]
+	path = stdlib
+	url = git://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "swift"]
+	path = swift
+	url = git://github.com/stackforge/puppet-swift
+[submodule "sysctl"]
+	path = sysctl
+	url = git://github.com/duritong/puppet-sysctl.git
+[submodule "vcsrepo"]
+	path = vcsrepo
+	url = git://github.com/puppetlabs/puppetlabs-vcsrepo
+[submodule "vswitch"]
+	path = vswitch
+	url = git://github.com/bodepd/puppet-vswitch
+[submodule "xinetd"]
+	path = xinetd
+	url = git://github.com/puppetlabs/puppetlabs-xinetd
