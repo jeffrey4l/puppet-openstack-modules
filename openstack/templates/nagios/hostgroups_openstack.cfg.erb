@@ -1,0 +1,10 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+#
+<% if hostgroups.kind_of? Hash%>
+<% hostgroups.each do |host| %>
+define hostgroup{
+  hostgroup_name <%= host %> 
+}
+<% end %>
+<% end %>

@@ -1,0 +1,12 @@
+# Automatically generated for Debian scripts by puppet
+[client]
+host     = localhost
+user     = <%= debian_sys_username %>
+password = <%= debian_sys_password %>
+socket   = /var/run/mysqld/mysqld.sock
+[mysql_upgrade]
+host     = localhost
+user     = <%= debian_sys_username %>
+password = <%= debian_sys_password %>
+socket   = /var/run/mysqld/mysqld.sock
+basedir  = /usr

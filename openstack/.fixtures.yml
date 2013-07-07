@@ -1,0 +1,22 @@
+fixtures:
+  repositories:
+    'cinder': 'git://github.com/stackforge/puppet-cinder'
+    "keystone": "git://github.com/stackforge/puppet-keystone.git"
+    "nova": "git://github.com/stackforge/puppet-nova.git"
+    "glance": "git://github.com/stackforge/puppet-glance.git"
+    'horizon': 'git://github.com/stackforge/puppet-horizon'
+    'swift' : 'git://github.com/stackforge/puppet-swift'
+    'quantum': 'git://github.com/bodepd/puppet-quantum'
+    "apt": "git://github.com/puppetlabs/puppetlabs-apt.git"
+    "apache": "git://github.com/puppetlabs/puppetlabs-apache.git"
+    "concat": "git://github.com/ripienaar/puppet-concat.git"
+    "firewall": "git://github.com/puppetlabs/puppetlabs-firewall.git"
+    "mysql": "git://github.com/puppetlabs/puppetlabs-mysql.git"
+    "rabbitmq": "git://github.com/puppetlabs/puppetlabs-rabbitmq"
+    'memcached': 'git://github.com/saz/puppet-memcached'
+    "stdlib": "git://github.com/puppetlabs/puppetlabs-stdlib.git"
+    "sysctl": "git://github.com/duritong/puppet-sysctl.git"
+    'inifile':  'git://github.com/cprice-puppet/puppetlabs-inifile'
+    'vswitch': 'git://github.com/bodepd/puppet-vswitch'
+  symlinks:
+    "openstack": "#{source_dir}"

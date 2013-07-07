@@ -1,0 +1,15 @@
+log_facility=daemon
+pid_file=/var/run/nagios/nrpe.pid
+server_port=5666
+server_address=<%= bind_address %>
+nrpe_user=nagios
+nrpe_group=nagios
+allowed_hosts=<%= allowed_hosts %>
+dont_blame_nrpe=1
+# command_prefix=/usr/bin/sudo 
+debug=<%= debug_str %>
+command_timeout=60
+connection_timeout=300
+#allow_weak_random_seed=1
+include=/etc/nagios/nrpe_local.cfg
+include_dir=/etc/nagios/nrpe.d/
