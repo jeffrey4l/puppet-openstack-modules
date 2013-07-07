@@ -1,0 +1,6 @@
+[submodule "apache"]
+	path = apache
+	url = git://github.com/puppetlabs/puppetlabs-apache
+[submodule "cinder"]
+	path = cinder
+	url = git://github.com/stackforge/puppet-cinder
